@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:loginConfiguration xmlns:tns="http://www.worklight.com/auth/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         
+	 <securityTests>     
+       	<customSecurityTest name="V2SoftSecurity">
+       		<test realm="wl_antiXSRFRealm"/>
+			<test isInternalDeviceID="true" realm="wl_deviceNoProvisioningRealm"/>
+			<test isInternalUserID="true" realm="V2SoftRealm"/>
+       	</customSecurityTest>    		
+	</securityTests> 
+	
+	<realms>
+		<realm loginModule="V2SoftLoginModule" name="V2SoftRealm">
+			<className>com.v2soft.V2SoftAuthenticator</className>
+			<parameter name="greetingMessage" value="Please provide your credentials!"/>
+		</realm>   	
+	</realms>
+
+	<loginModules>
+		<loginModule name="V2SoftLoginModule">
+			<className>com.v2soft.V2SoftLoginModule</className>
+			<parameter name="username"/> 
+			<parameter name="password"/>
+		</loginModule>			
+	</loginModules>
+
+</tns:loginConfiguration>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>V2Soft Sync</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+    		<link rel="stylesheet" href="css/main.css">
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    	</head>
+    	<body style="display: none;">
+
+			<header id="header">
+				<h2 id="headerText">V2SOFT</h2>
+			</header>
+
+			<div id="content">
+			
+				<p id="internetInfo"></p>
+				<div id="divLogin">
+					<input type="text" placeholder="Enter username" id="AuthUsername"/><br />
+		       		<input type="password" placeholder="Enter password" id="AuthPassword"/><br />	       	
+		       		<label><input type="checkbox" value="false" id="rememberMe" name="rememberme"/> Remember Me</label><br/>		       	
+		       		<input onclick="loginButtonClick()" type="button" class="formButton" value="Login" id="btnLogin" />
+				</div>
+	       		
+	       		<div id="mainPage">
+	       			<input id="btnLogout" type="button" value="Logout" onclick="logOut()"/>
+	       			<br>
+					<div id="dates">
+						<div id='parent_fromDate'>
+							<label for="fromDate">From Date:</label><br>
+							<input id="fromDate" type="date"/><br>
+						</div>
+
+						<div id='parent_toDate'>
+							<label for="toDate">To Date:</label><br>
+							<input id="toDate" type="date"/><br>
+						</div>
+						
+						<div id='parent_fromTime'>
+							<label for="fromTime">From Time:</label><br>
+							<input id="fromTime" type="time"/><br>
+						</div>
+
+						<div id='parent_toTime'>
+							<label for="toTime">To Time:</label><br>
+							<input id="toTime" type="time"/><br>
+						</div>
+					</div>
+					
+					<select id="subject">			
+						<option value="" disabled selected>-Select your reason-</option>										
+					</select><br>
+					<input type="text" placeholder="Enter other reason" id="customReason"/><br />
+					<label id="lblNote">Detail:</label><br>
+					<textarea id="note" maxlength="255"></textarea><br><br>
+					<input id="btnSend" onclick="senNotification()" type="button" value="Send"/>    
+	       		</div>
+			</div>
+		
+			<footer id="footer">
+				<h5 id="footerText">Solutions & Innovation through Technology</h5>
+			</footer>
+		
+			<script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    	</body>
+</html>

@@ -1,0 +1,178 @@
+/*================ design for login page =====================*/
+
+html{
+  background: url("../images/background.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+}
+
+#header,#footer,#content { 
+	position: fixed; 
+	right:0;left:0; 
+	background-color: rgba(51,51,51,0.3);
+	-webkit-backdrop-filter: blur(10px);
+  	backdrop-filter: blur(10px);
+  	color: white; 	
+}
+
+#header{
+   height: 50px; 
+   top:0;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   text-align: center;
+   vertical-align: middle;
+   background-color: rgba(255,255,255,0.3);
+	-webkit-backdrop-filter: blur(10px);
+  	backdrop-filter: blur(10px);
+}
+#footer{
+  height:50px; 
+  bottom:0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(255,255,255,0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: black;
+}
+#headerText, #footerText{
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 10px;
+	height: 100%;
+}
+
+#footerText{
+	padding: 15px;
+}
+
+#content{
+	height: 100%;
+  	width: 100%;
+  	top:50px;
+    bottom:50px;  
+    overflow: auto;
+}
+
+#divLogin{
+    position: relative;
+	top:50px;
+	bottom:50px;
+	border: 1px;
+	width: 70%;
+	height: auto;
+	margin-left: 15%;
+	margin-right: 15%;		
+	background-color: rgba(25,25,25,0.3);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	-webkit-animation-name: loginDiv;
+	-webkit-animation-duration: 4s; 
+	-webkit-transition: all 1s ease;
+	animation-name: loginDiv;
+	animation-duration: 3s;
+}
+
+@-webkit-keyframes loginDiv {
+    from {top: 100%;}
+    to { margin-bottom: -100%;} 
+}
+
+#AuthUsername, #AuthPassword, #btnLogin{
+	float:none;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#AuthUsername{
+	margin-top: 20px;
+}
+
+#AuthPassword{
+	margin-top: 10px;
+}
+
+#btnLogin{
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+#rememberMe{
+	float: none;
+	margin-top: 5px;
+	margin-left: 10%;	
+}
+
+#internetInfo{
+	margin-top: 0px;
+	text-align: center;
+	background-color: rgba(255,255,204,0.3);
+	font-weight: bold;
+	color: black;
+	-webkit-backdrop-filter: blur(10px);
+  	backdrop-filter: blur(10px);
+}
+
+/*=============== end design login page ===================*/
+
+/*================ design for main page =====================*/
+
+/*#dates{
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 0px;
+	width: 100%;
+	table-layout: fixed;
+}*/
+
+#dates{
+	width:100%;
+	margin-top: 15px;
+}
+#parent_fromDate,#parent_fromTime{
+	margin-left: 12px;
+	float:left;
+}
+#parent_toDate,#parent_toTime{
+	margin-right: 12px;
+    float:right;
+}
+
+
+#subject, #customReason{
+	margin-top: 10px;
+	margin-left: 12px;
+}
+
+#lblNote{
+	margin-top: 10px;
+	margin-left: 12px;
+	display:inline-block;
+}
+
+#note{
+	margin-left: 12px;
+	margin-right: 12px;
+	width: 92%;
+	height: 125px;
+}
+
+#btnSend{
+	width: 125px;
+	position:relative;
+	margin: -20px -50px; 
+	left:48%;
+}
+
+#btnLogout{
+	margin-top: 5px;
+	margin-right: 12px;
+	float: right;
+	
+}
+
+/*=============== end design main page ===================*/
